@@ -1,0 +1,15 @@
+@mixin padding {
+  padding: 4em;
+
+  @media screen and (min-width: 900px) {
+    padding: 5em 10em;
+  }
+
+  @media screen and (min-width: 1300px) {
+    padding: 5em 25em;
+  }
+
+  @media screen and (min-width: 1500px) {
+    padding: 5em 30em;
+  }
+}

@@ -1,0 +1,36 @@
+.design-archives {
+
+  ul {
+    padding: 2em 0;
+  }
+
+  .viewall, .next {
+
+    margin-left: 2em;
+    margin-right: 2em;
+
+    a {
+      display: block;
+      padding: 2em 1em;
+      margin-bottom: 1em;
+      text-align: center;
+      background: $turquoise;
+      color: white;
+      text-decoration: none;
+      transition: .3s;
+
+      &:hover {
+        cursor: pointer;
+        background: darken($turquoise, 5%);
+      }
+
+    }
+
+  }
+
+  li:last-child a {
+    margin-bottom: 0;
+  }
+
+
+}

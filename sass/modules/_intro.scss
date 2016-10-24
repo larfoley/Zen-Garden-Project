@@ -1,0 +1,72 @@
+.intro {
+  background: white;
+
+  h1, h2 {
+    color: white;
+    text-align: center;
+    @media screen and (min-width: 800px) {
+      text-align: left;
+    }
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    border: 7px solid $turquoise;
+    // display: inline-block;
+    padding: .5em;
+    color: black;
+    display: block;
+    @media screen and (min-width: 800px) {
+      display: inline-block;
+      font-size: 3.5em;
+    }
+  }
+  h2 {
+    font-style: italic;
+
+  }
+
+  header {
+    // background: black;
+
+    background: url('../img/bg-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    padding: 8em 4em;
+    @media screen and (min-width: 1000px) {
+      padding: 8em 5em;
+    }
+  }
+
+  .summary {
+    @include padding();
+    a:before {
+      content: " ";
+      background-image: url('../img/download.ico');
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+    text-align: center;
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  .preamble {
+    @include padding();
+    // background: url('../img/bg-1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background: $turquoise;
+    color: white;
+    h3 {
+      // color: black
+    }
+  }
+
+}

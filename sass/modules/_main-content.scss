@@ -1,0 +1,68 @@
+.main {
+
+  & > div {
+    color: white;
+  }
+  h2, h3 {
+    color: white;
+  }
+  h3 {
+    margin: 0;
+  }
+}
+
+.explanation, .participation, .benefits {
+    // @include padding();
+    padding: 6em 4em;
+}
+
+.explanation {
+  background: #2980b9;
+}
+
+.benefits {
+  background: $turquoise;
+}
+
+.participation {
+  background-color: white;
+  h3 {
+    color: black;
+  }
+  p {
+    color: $text-color;
+  }
+}
+.requirements {
+  background: #2980b9;
+  padding: 4em 0 0 0;
+  background-attachment: fixed;
+  // @include padding();
+  // position: relative;
+  p, h3 {
+    margin-left: 64px;  /* WARNING: dependant on the base font-size being 16px*/
+    margin-right: 64px;
+  }
+  & p:last-child {
+    // width: 100%;
+    background: white;
+    color: $text-color;
+    @extend .u-text-lead;
+    border-left: 2em solid $turquoise;
+    // border-right: 2em solid $turquoise;
+    // @include padding();
+    // background: url('../img/bg-1.jpg');
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4em;
+    margin-bottom: 0;
+    padding: 4em;
+    // position: relative;
+    left: 0;
+    right: 0;
+    // bottom: 0;
+    text-align: center;
+    // padding: 6em;
+    @extend .u-text-lead;
+  }
+}

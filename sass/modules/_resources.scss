@@ -1,0 +1,22 @@
+.zen-resources {
+  ul {
+    padding: 2em;
+  }
+  li {
+    list-style: circle;
+  }
+  a {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    transition: .3s;
+    color: $turquoise;
+    &:hover {
+      cursor: pointer;
+      background: black;
+    }
+  }
+}
