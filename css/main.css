@@ -609,9 +609,9 @@ h3 {
   .intro h2 {
     font-style: italic; }
   .intro header {
-    background: url("../img/bg-2.jpg");
+    background-image: url("../img/bg-2.jpg");
     background-attachment: fixed;
-    background-position: center;
+    background-size: cover;
     padding: 8em 4em; }
     @media screen and (min-width: 1000px) {
       .intro header {
