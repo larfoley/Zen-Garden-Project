@@ -13,7 +13,6 @@
     font-size: 2.5em;
     margin-bottom: 0;
     border: 7px solid $turquoise;
-    // display: inline-block;
     padding: .5em;
     color: black;
     display: block;
@@ -24,15 +23,14 @@
   }
   h2 {
     font-style: italic;
-
   }
 
   header {
     // background: black;
 
-    background: url('../img/bg-2.jpg');
+    background-image: url('../img/bg-2.jpg');
     background-attachment: fixed;
-    background-position: center;
+    background-size: cover;
     padding: 8em 4em;
     @media screen and (min-width: 1000px) {
       padding: 8em 5em;
@@ -59,14 +57,10 @@
 
   .preamble {
     @include padding();
-    // background: url('../img/bg-1.jpg');
     background-position: center;
     background-attachment: fixed;
     background: $turquoise;
     color: white;
-    h3 {
-      // color: black
-    }
   }
 
 }
